@@ -6,41 +6,37 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_POSTHOG_HOST: "https://us.i.posthog.com",
   },
   async rewrites() {
-    return {
-      beforeFiles: [],
-      afterFiles: [],
-      fallback: [
-        // Proxy static pages
-        {
-          source: "/ai-prompt-testing",
-          destination: "/ai-prompt-testing.html",
-        },
-        {
-          source: "/privacy",
-          destination: "/privacy.html",
-        },
-        {
-          source: "/terms",
-          destination: "/terms.html",
-        },
+    return [
+      // Proxy static pages
+      {
+        source: "/ai-prompt-testing",
+        destination: "/ai-prompt-testing.html",
+      },
+      {
+        source: "/privacy",
+        destination: "/privacy.html",
+      },
+      {
+        source: "/terms",
+        destination: "/terms.html",
+      },
 
-        // Test
-        {
-          source: "/studio",
-          destination: "https://gusarov.studio",
-        },
+      // Test
+      {
+        source: "/studio",
+        destination: "https://gusarov.studio",
+      },
 
-        // Reverse-Proxy DataFast
-        {
-          source: "/replay-xF5c/script.js",
-          destination: "https://datafa.st/js/script.js",
-        },
-        {
-          source: "/replay-xF5c/events",
-          destination: "https://datafa.st/api/events",
-        },
-      ],
-    };
+      // Reverse-Proxy DataFast
+      {
+        source: "/replay-xF5c/script.js",
+        destination: "https://datafa.st/js/script.js",
+      },
+      {
+        source: "/replay-xF5c/events",
+        destination: "https://datafa.st/api/events",
+      },
+    ];
   },
   async redirects() {
     return [

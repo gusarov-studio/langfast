@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "production": "lisapet-ai",
+    "default": "lisapet-ai"
+  },
+  "targets": {
+    "lisapet-ai": {
+      "hosting": {
+        "langfast": [
+          "langfast"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

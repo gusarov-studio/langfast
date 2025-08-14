@@ -24,8 +24,8 @@ export default function RootLayout({
       <head>
         {/* DataFast */}
         <Script
-          data-website-id="68650ba6dc6c810679eb701b"
-          data-domain="langfa.st"
+          data-website-id="689dbfa0e5a265da24b04806"
+          data-domain="langfast--pr1-boilerplate-akkcei85.web.app"
           src="/replay-xF5c/script.js"
           strategy="afterInteractive"
         />

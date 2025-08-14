@@ -29,11 +29,11 @@ const nextConfig: NextConfig = {
 
       // Reverse-Proxy DataFast
       {
-        source: "/replay-xF5c/script.js",
+        source: "/js/script.js",
         destination: "https://datafa.st/js/script.js",
       },
       {
-        source: "/replay-xF5c/events",
+        source: "/api/events",
         destination: "https://datafa.st/api/events",
       },
     ];

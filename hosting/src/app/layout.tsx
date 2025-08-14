@@ -26,7 +26,7 @@ export default function RootLayout({
         <Script
           data-website-id="68650ba6dc6c810679eb701b"
           data-domain="langfa.st"
-          src="/replay-xF5c/script.js"
+          src="/js/script.js"
           strategy="afterInteractive"
         />
       </head>

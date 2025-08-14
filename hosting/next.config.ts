@@ -24,6 +24,12 @@ const nextConfig: NextConfig = {
           destination: "/terms.html",
         },
 
+        // Test
+        {
+          source: "/studio",
+          destination: "https://gusarov.studio",
+        },
+
         // Reverse-Proxy DataFast
         {
           source: "/replay-xF5c/script.js",

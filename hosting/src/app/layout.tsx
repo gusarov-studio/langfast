@@ -24,8 +24,8 @@ export default function RootLayout({
       <head>
         {/* DataFast */}
         <Script
-          data-website-id="689e41acacb646522c9114a1"
-          data-domain="langfast--lisapet-ai.us-central1.hosted.app"
+          data-website-id="68650ba6dc6c810679eb701b"
+          data-domain="langfa.st"
           src="/js/script.js"
           strategy="afterInteractive"
         />

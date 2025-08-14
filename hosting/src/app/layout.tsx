@@ -1,30 +1,55 @@
-import type { Metadata } from "next";
+import Script from "next/script";
+import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
 
-import "./globals.css";
-import { Header } from "./components";
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: "Next.js on Firebase App Hosting",
-  description: "",
-};
+  title: 'LangFast - Prompt Playground',
+  icons: {
+    icon: '/assets/favicon.png',
+  },
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className="dark-theme">
+    <html lang="en" className={inter.className}>
       <head>
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
+        {/* DataFast */}
+        <Script
+          data-website-id="68650ba6dc6c810679eb701b"
+          data-domain="langfa.st"
+          src="/replay-xF5c/script.js"
+          strategy="afterInteractive"
         />
       </head>
+
       <body>
-        <div className="dots" />
-        <Header />
-        {children}
-        <div className="bottom-gradient" />
+        <div id="lisapet">
+          {children}
+        </div>
+
+        {/* Tawk.to */}
+        <Script strategy="lazyOnload">
+          {`
+            var Tawk_API = Tawk_API || { }, Tawk_LoadStart = new Date();
+            (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/68505fcf1c5a261911682741/1itsvch48';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

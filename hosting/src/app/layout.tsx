@@ -1,3 +1,5 @@
+"use client";
+
 import Script from "next/script";
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
@@ -7,12 +9,12 @@ const inter = Inter({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: 'LangFast - Prompt Playground',
-  icons: {
-    icon: '/assets/favicon.png',
-  },
-}
+// export const metadata: Metadata = {
+//   title: 'LangFast - Prompt Playground',
+//   icons: {
+//     icon: '/assets/favicon.png',
+//   },
+// }
 
 export default function RootLayout({
   children,
